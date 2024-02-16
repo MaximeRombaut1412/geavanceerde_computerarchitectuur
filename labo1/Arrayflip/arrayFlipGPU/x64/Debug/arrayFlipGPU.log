@@ -1,18 +1,8 @@
 ﻿  Compiling CUDA source file kernel.cu...
   
   C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc142.pdb" -o "C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU\x64\Debug\kernel.cu.obj" "C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU\kernel.cu" 
-C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU\kernel.cu(37): error : identifier "a" is undefined
-        arrayFlip<<< 1, sizeof(a)/sizeof(int) >>> (cudaA, cudaB, SIZE);
-                               ^
-  
-C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU\kernel.cu(37): error : identifier "cudaA" is undefined
-        arrayFlip<<< 1, sizeof(a)/sizeof(int) >>> (cudaA, cudaB, SIZE);
-                                                   ^
-  
-C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU\kernel.cu(37): error : identifier "cudaB" is undefined
-        arrayFlip<<< 1, sizeof(a)/sizeof(int) >>> (cudaA, cudaB, SIZE);
-                                                          ^
-  
-  3 errors detected in the compilation of "C:/Users/stijn/Documents/school/2023-2024/geavanceerde computerarchitectuur/arrayflip/Arrayflip/arrayFlipGPU/kernel.cu".
   kernel.cu
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 12.3.targets(799,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc142.pdb" -o "C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU\x64\Debug\kernel.cu.obj" "C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU\kernel.cu"" exited with code 2.
+  tmpxft_00006dc4_00000000-7_kernel.cudafe1.cpp
+     Creating library C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayFlipGPU.lib and object C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayFlipGPU.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  arrayFlipGPU.vcxproj -> C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayFlipGPU.exe

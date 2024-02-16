@@ -1,8 +1,26 @@
 ﻿  Compiling CUDA source file kernel.cu...
   
   C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc142.pdb" -o "C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\x64\Debug\kernel.cu.obj" "C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu" 
+C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(21): warning #69-D: integer conversion resulted in truncation
+        int numElements = 5000000000;
+                          ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(21): warning #69-D: integer conversion resulted in truncation
+        int numElements = 5000000000;
+                          ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
   kernel.cu
-  tmpxft_00006a14_00000000-7_kernel.cudafe1.cpp
+  tmpxft_00006564_00000000-7_kernel.cudafe1.cpp
+C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(21): warning C4305: 'initializing': truncation from '__int64' to 'int'
+C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(21): warning C4309: 'initializing': truncation of constant value
+C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(25): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+  C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(25): note: consider using '%zd' in the format string
+C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(48): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+  C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\arrayFlipGPU2\kernel.cu(48): note: consider using '%zd' in the format string
      Creating library C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayFlipGPU2.lib and object C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayFlipGPU2.exp
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   arrayFlipGPU2.vcxproj -> C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayFlipGPU2.exe

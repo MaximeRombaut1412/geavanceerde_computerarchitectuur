@@ -34,7 +34,7 @@ int main()
     cudaMemcpy(gpuA, A, sizeof(A), cudaMemcpyHostToDevice);
 
     //call GPU function
-    arrayFlip <<< 1, sizeof(a)/sizeof(int) >>> (cudaA, cudaB, SIZE);
+    arrayFlip <<< 1, sizeof(A)/sizeof(int) >>> (gpuA, gpuB, SIZE);
 
     //copy result into B
     cudaMemcpy(B, gpuB, sizeof(B), cudaMemcpyDeviceToHost);

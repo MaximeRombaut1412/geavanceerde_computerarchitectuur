@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arrayFlipGPU", "arrayFlipGP
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arrayFlipGPU2", "arrayFlipGPU2\arrayFlipGPU2.vcxproj", "{C0ABC27A-78E0-4CF5-B060-8C7F7469A9E3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arrayFlip2", "arrayFlip2\arrayFlip2.vcxproj", "{E517F9C4-60C0-4985-85A4-F25298B3B3B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +29,10 @@ Global
 		{C0ABC27A-78E0-4CF5-B060-8C7F7469A9E3}.Debug|x64.Build.0 = Debug|x64
 		{C0ABC27A-78E0-4CF5-B060-8C7F7469A9E3}.Release|x64.ActiveCfg = Release|x64
 		{C0ABC27A-78E0-4CF5-B060-8C7F7469A9E3}.Release|x64.Build.0 = Release|x64
+		{E517F9C4-60C0-4985-85A4-F25298B3B3B6}.Debug|x64.ActiveCfg = Debug|x64
+		{E517F9C4-60C0-4985-85A4-F25298B3B3B6}.Debug|x64.Build.0 = Debug|x64
+		{E517F9C4-60C0-4985-85A4-F25298B3B3B6}.Release|x64.ActiveCfg = Release|x64
+		{E517F9C4-60C0-4985-85A4-F25298B3B3B6}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

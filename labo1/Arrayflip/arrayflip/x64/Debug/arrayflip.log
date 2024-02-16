@@ -8,5 +8,7 @@ C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arra
   Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
   
   kernel.cu
-  tmpxft_000067f0_00000000-7_kernel.cudafe1.cpp
+  tmpxft_00004a78_00000000-7_kernel.cudafe1.cpp
+     Creating library C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayflip.lib and object C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayflip.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   arrayflip.vcxproj -> C:\Users\stijn\Documents\school\2023-2024\geavanceerde computerarchitectuur\arrayflip\Arrayflip\x64\Debug\arrayflip.exe

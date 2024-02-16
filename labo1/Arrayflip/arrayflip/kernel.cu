@@ -22,5 +22,17 @@ int main()
         B[i] = A[SIZE - 1 - i];
     }
 
+    // Verify that the result vector is correct
+    for (int i = 0; i < SIZE; ++i)
+    {
+        if (B[i] != A[SIZE - i - 1])
+        {
+            fprintf(stderr, "Result verification failed at element %d!\n", i);
+            exit(EXIT_FAILURE);
+        }
+    }
+
+    printf("Test PASSED\n");
+
     return 0;
 }
