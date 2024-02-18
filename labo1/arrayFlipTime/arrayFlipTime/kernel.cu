@@ -67,6 +67,8 @@ double runFlipGPU(int numElements)
     //printf("CUDA kernel launch with %d blocks of %d threads\n", blocksPerGrid, threadsPerBlock);
     vectorFlip << <blocksPerGrid, threadsPerBlock >> > (d_input, d_output, numElements);
 
+    cudaDeviceSynchronize();
+
     //end clock measurement
     end = clock();
 
@@ -162,15 +164,15 @@ double runFlipCPU(int amount)
 
 int main()
 {
-    /*const int base = 25;
+    const int base = 10;
     for (int i = 0; i < 9; i++)
     {
         printf("needed clocks: %lf\n", runFlipCPU((int)base * pow(10, i)));
         printf("needed clocks: %lf\n", runFlipGPU((int)base * pow(10, i)));
-    }*/
+    }
 
-    printf("needed clocks: %lf\n", runFlipCPU(5000000000));
-    printf("needed clocks: %lf\n", runFlipGPU(5000000000));
+    //printf("needed clocks: %lf\n", runFlipCPU(5000000000));
+    //printf("needed clocks: %lf\n", runFlipGPU(5000000000));
 
     return 0;
 }
